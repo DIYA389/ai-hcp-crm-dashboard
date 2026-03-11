@@ -5,7 +5,7 @@ import json
 import re
 
 llm = ChatGroq(
-    api_key="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",
+    api_key=os.getenv("GROQ_API_KEY"),
     model="llama-3.3-70b-versatile"
 )
 

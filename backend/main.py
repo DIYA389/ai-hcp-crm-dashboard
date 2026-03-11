@@ -5,6 +5,9 @@ from langgraph_agent import run_agent
 from database import engine, SessionLocal
 from models import Base, PromptHistory
 
+from dotenv import load_dotenv
+load_dotenv()
+
 
 app = FastAPI()
 
