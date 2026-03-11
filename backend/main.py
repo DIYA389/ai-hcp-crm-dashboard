@@ -72,3 +72,6 @@ def get_history():
 
     finally:
         db.close()
+@app.get("/")
+def home():
+    return {"message": "AI HCP CRM API is running"}        
