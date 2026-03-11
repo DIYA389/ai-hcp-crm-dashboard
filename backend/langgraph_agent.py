@@ -3,6 +3,7 @@ from langgraph.graph import StateGraph
 from typing import TypedDict
 import json
 import re
+import os
 
 llm = ChatGroq(
     api_key=os.getenv("GROQ_API_KEY"),
