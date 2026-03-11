@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.langgraph_agent import run_agent
 
-from database import engine, SessionLocal
+from backend.database import engine, SessionLocal
 from models import Base, PromptHistory
 
 from dotenv import load_dotenv
