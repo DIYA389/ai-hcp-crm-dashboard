@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from langgraph_agent import run_agent
+from backend.langgraph_agent import run_agent
 
 from database import engine, SessionLocal
 from models import Base, PromptHistory
